@@ -1,0 +1,38 @@
+{
+  "author": "BenediktHopf",
+  "name": "penandpaper",
+  "description": "Pen&Paper Bot",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "dependencies": {
+    "actionhero": "17.1.0",
+    "discord.js": "^11.2.1",
+    "fakeredis": "latest",
+    "ioredis": "latest",
+    "neo4j-driver": "^1.4.1",
+    "ws": "latest"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "actionhero start",
+    "actionhero": "actionhero",
+    "pretest": "standard",
+    "test": "cross-env NODE_ENV=test mocha"
+  },
+  "standard": {
+    "ignore": [
+      "public/javascript/actionheroClient.*"
+    ],
+    "globals": [
+      "describe",
+      "before",
+      "beforeEach",
+      "after",
+      "afterEach",
+      "it",
+      "expect"
+    ]
+  }
+}
